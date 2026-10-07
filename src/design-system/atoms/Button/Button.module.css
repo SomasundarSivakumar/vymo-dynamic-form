@@ -1,0 +1,110 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-space-sm);
+  font-family: var(--ds-font-family);
+  font-size: var(--ds-font-size-base);
+  font-weight: var(--ds-font-weight-semibold);
+  line-height: var(--ds-line-height-normal);
+  border-radius: var(--ds-radius-md);
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all var(--ds-transition-slow);
+  outline: none;
+  position: relative;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button:focus-visible {
+  box-shadow: var(--ds-focus-ring);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+
+.primary {
+  background: linear-gradient(135deg, var(--ds-color-primary) 0%, var(--ds-color-primary-active) 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+
+.primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--ds-shadow-glow);
+}
+
+.primary:hover:not(:disabled)::before {
+  left: 150%;
+}
+
+.primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+}
+
+.secondary {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--ds-color-text-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--ds-color-text-primary);
+  border-color: var(--ds-color-border-default);
+}
+
+.outline:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--ds-color-border-hover);
+}
+
+
+.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

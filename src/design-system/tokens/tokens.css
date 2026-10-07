@@ -1,0 +1,84 @@
+:root {
+
+  --ds-color-bg-app: #030712;
+  --ds-color-bg-card: rgba(17, 24, 39, 0.7);
+  --ds-color-bg-card-hover: rgba(31, 41, 55, 0.8);
+  --ds-color-bg-input: rgba(17, 24, 39, 0.6);
+  --ds-color-bg-input-hover: rgba(31, 41, 55, 0.7);
+  --ds-color-bg-input-focus: rgba(17, 24, 39, 0.9);
+  
+  --ds-color-border-default: rgba(75, 85, 99, 0.4);
+  --ds-color-border-hover: rgba(107, 114, 128, 0.6);
+  --ds-color-border-focus: #8b5cf6;
+  --ds-color-border-error: #ef4444;
+  --ds-color-border-success: #10b981;
+
+  --ds-color-primary: #8b5cf6;
+  --ds-color-primary-hover: #7c3aed;
+  --ds-color-primary-active: #6d28d9;
+  --ds-color-primary-subtle: rgba(139, 92, 246, 0.15);
+
+  --ds-color-text-primary: #f9fafb;
+  --ds-color-text-secondary: #d1d5db;
+  --ds-color-text-muted: #9ca3af;
+  --ds-color-text-inverse: #030712;
+
+  --ds-color-error: #f87171;
+  --ds-color-error-bg: rgba(248, 113, 113, 0.1);
+  --ds-color-success: #34d399;
+  --ds-color-success-bg: rgba(52, 211, 153, 0.1);
+
+  --ds-focus-ring: 0 0 0 4px rgba(139, 92, 246, 0.25);
+  --ds-focus-ring-error: 0 0 0 4px rgba(248, 113, 113, 0.25);
+
+
+  --ds-space-xs: 4px;
+  --ds-space-sm: 8px;
+  --ds-space-md: 12px;
+  --ds-space-lg: 16px;
+  --ds-space-xl: 24px;
+  --ds-space-2xl: 32px;
+  --ds-space-3xl: 48px;
+
+
+  --ds-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ds-font-heading: 'Outfit', 'Inter', system-ui, sans-serif;
+  --ds-font-size-xs: 0.75rem;     /* 12px */
+  --ds-font-size-sm: 0.875rem;    /* 14px */
+  --ds-font-size-base: 1rem;      /* 16px */
+  --ds-font-size-lg: 1.125rem;    /* 18px */
+  --ds-font-size-xl: 1.25rem;     /* 20px */
+  --ds-font-size-2xl: 1.5rem;     /* 24px */
+  --ds-font-size-3xl: 2.25rem;       /* 36px */
+
+  --ds-font-weight-regular: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-semibold: 600;
+  --ds-font-weight-bold: 700;
+
+  --ds-line-height-tight: 1.2;
+  --ds-line-height-normal: 1.5;
+  --ds-line-height-relaxed: 1.625;
+
+
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 12px;
+  --ds-radius-lg: 16px;
+  --ds-radius-xl: 24px;
+  --ds-radius-full: 9999px;
+
+
+  --ds-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --ds-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --ds-shadow-lg: 0 15px 35px -5px rgba(0, 0, 0, 0.5), 0 10px 15px -5px rgba(0, 0, 0, 0.4);
+  --ds-shadow-glow: 0 0 20px rgba(139, 92, 246, 0.35);
+
+
+  --ds-breakpoint-mobile: 768px;
+  --ds-breakpoint-desktop: 1024px;
+
+
+  --ds-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --ds-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --ds-transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
